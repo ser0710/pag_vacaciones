@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="top-part">
+            <img id="logo" src="img/gato1.png">
+            <h1 id="name"> Nombre empresa</h1>
+        </div>  
+        <div id="mid-part">
+            <h2 id="caract">Caracteristicas</h2>
+            <ul id="button-list" data-bind="foreach: datos">
+                <button class="buttonFloors" data-bind="text: name, click: $parent.changeImgs"></button>
+            </ul>
+        </div>
+        <div id="bot-part">
+            <div id="left" data-bind="with: currentfloor">
+                <h3 data-bind="text: descrip"></h3>
+            </div>
+            <div id="right1" data-bind="with: currentfloor">
+                <h2>Galeria</h2>
+                <img id="mainImg" src="" data-bind="attr: {src: imgRef}">
+                <nav>
+                    <ul data-bind="foreach: img">
+                        <img id="test2" class="prueba" src="" data-bind="attr: {src: $data}, click: prueba">
+                    </ul>
+                </nav>
+                
+            </div>   
+        </div>
+        <button id="return" class="buttonFloors" onclick="volver()">Volver</button>
+    </body>
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="home.js"></script>
+</html>
