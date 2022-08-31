@@ -1,3 +1,17 @@
+var casa1 = [
+    {
+        nombre: "piso 1",
+        imgRef: "img/piso11.jpg",
+        img: ["img/piso11.jpg", "img/piso12.jpg", "img/piso13.jpg", "img/piso14.jpg", "img/piso15.jpg"],
+        descrip: "Maravillosa casa en Bogota de 120m2, sala independiente y comedor, chimenea"
+    },
+    {
+        nombre: "piso 2",
+        imgRef: "img/piso16.jpg",
+        img: ["img/piso16.jpg", "img/piso17.jpg", "img/piso18.jpg", "img/piso19.jpg", "img/piso20.jpg"],
+        descrip: "3 habitaciones, 2 baños"
+    }
+]
 
 var house = function(casa1){
     this.imgRef = ko.observable(casa1.imgRef);
