@@ -13,7 +13,6 @@ var casa1 = [
     }
 ]
 
-
 var house = function(casa1){
     this.imgRef = ko.observable(casa1.imgRef);
     this.img = ko.observableArray(casa1.img);
