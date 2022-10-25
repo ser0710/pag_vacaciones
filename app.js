@@ -24,8 +24,7 @@ function moveCarousel() {
 
 function show(){    
     if(index === 0){
-        window.location.href="home1.html";
-        
+        window.location.href="home1.html";   
     }
 }
 

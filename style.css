@@ -26,14 +26,17 @@
     background: rgb(79, 81, 90);
 }
 
-#city {
+.city {
+    display: block;
+    text-align: center;
+    color: white;
     height: 80%;
     margin: 1% auto;
     width: 80%;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #f1f1f1;
+    background-color: rgb(79, 81, 90);
     font-size: 20px;
   }
 
